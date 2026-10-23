@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests
 def get_employee(ID):
     employee = requests.get(f"https://jsonplaceholder.typicode.com/users/{ID}").json()

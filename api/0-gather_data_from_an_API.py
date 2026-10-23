@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import sys
 """Getting employee name and tasks completed
 """
 import requests
@@ -38,8 +39,7 @@ def get_employee(ID):
         if i["completed"] is True:
             print(f"\t {i['title']}")
 
-if __name__ == '__main__':
-    import sys
 
+if __name__ == '__main__':
     if len(sys.argv) > 1:
         get_employee(int(sys.argv[1]))

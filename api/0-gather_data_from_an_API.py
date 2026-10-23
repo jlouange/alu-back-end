@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-import sys
 """
 Getting employee name and tasks completed
 """
+import sys
 import requests
 
 

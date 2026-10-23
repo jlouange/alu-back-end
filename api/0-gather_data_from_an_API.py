@@ -27,4 +27,4 @@ def get_employee(ID):
     print(f"Employee {employee_name} is done with tasks({total_number_of_done_tasks}/{number_of_tasks})")
     for i in tasks:
         if i["completed"] == True:
-            print(f"\t {i["title"]}")
+            print(f"\t {i['title']}")

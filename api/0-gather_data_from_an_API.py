@@ -6,6 +6,8 @@ import requests
 
 def get_employee(ID):
     """Getting employee name and tasks completed"""
+
+    ID = int(ID)
     employee = requests.get(
         f"https://jsonplaceholder.typicode.com/users/{ID}"
         ).json()

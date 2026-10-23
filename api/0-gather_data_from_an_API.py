@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import requests
 def get_employee(ID):
+    """Getting employee name and tasks completed"""
     employee = requests.get(f"https://jsonplaceholder.typicode.com/users/{ID}").json()
     todo = requests.get(f"https://jsonplaceholder.typicode.com/todos/").json()
     tasks = []

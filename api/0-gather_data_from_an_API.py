@@ -37,3 +37,9 @@ def get_employee(ID):
     for i in tasks:
         if i["completed"] is True:
             print(f"\t {i['title']}")
+
+if __name__ == '__main__':
+    import sys
+
+    if len(sys.argv) > 1:
+        get_employee(int(sys.argv[1]))

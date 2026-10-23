@@ -2,8 +2,8 @@
 """
 Getting employee name and tasks completed
 """
-import sys
 import requests
+import sys
 
 
 def get_employee(ID):

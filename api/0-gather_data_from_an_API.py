@@ -33,7 +33,7 @@ def get_employee(ID):
         number_of_tasks += 1
         if i.get("completed") is True:
             total_number_of_done_tasks += 1
-    print("Employee {} is done with tasks({}/{})".format(
+    print("Employee {} is done with tasks({}/{}):".format(
         employee_name, total_number_of_done_tasks, number_of_tasks
     ))
     for i in tasks:

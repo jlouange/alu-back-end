@@ -36,7 +36,7 @@ def get_employee(ID):
         number_of_tasks += 1
         if i.get("completed") is True:
             total_number_of_done_tasks += 1
-    data = {ID:[]}
+    data = {ID: []}
     for i in tasks:
         entry = {}
         entry["task"] = i["title"]
@@ -50,4 +50,3 @@ def get_employee(ID):
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         get_employee(int(sys.argv[1]))
-

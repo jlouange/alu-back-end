@@ -34,7 +34,7 @@ def get_employee():
                 entry.append(entry2)
         todo_all_employees[f"{i + 1}"] = entry
 
-    with open("to_do_all_employees.json", "w") as file:
+    with open("todo_all_employees.json", "w") as file:
         json.dump(todo_all_employees, file, indent=4)
 
 
